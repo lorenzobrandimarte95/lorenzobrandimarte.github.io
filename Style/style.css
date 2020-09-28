@@ -1,0 +1,434 @@
+* {
+  margin:0;
+  font-family: 'Epilogue', sans-serif;;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+h1 {
+    font-size: 35px;
+    font-weight: 400;
+    text-align: left;
+    padding:10px;
+    padding-top: 30px;
+    line-height: 42px;
+}
+
+.column-2 p {
+  text-align: left;
+  padding:10px;
+  line-height: 30px;
+}
+
+h2 {
+    font-size: 32px;
+    line-height: 38px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+p {
+    line-height: 27px;
+}
+
+.bg_dark {
+    background-color :#E0DBD5;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 70px;
+    padding-bottom: 80px;;
+}
+
+.bg_beige {
+    background-color: #f2f0ec; 
+}
+
+.pt-50 {
+    padding-top: 150px;
+    padding-left: 80px;
+}
+.pb-50 {
+    padding-bottom: 150px;
+}
+
+.contact-section {
+    padding-bottom: 80px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.fa {
+    padding-right:7px;
+}
+
+/* Header */
+
+header {
+    background-color:transparent;
+    height: 62px;
+    text-align: right;
+    padding: 11px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+nav {
+    text-align: right;
+    padding-right: 100px;
+}
+
+nav a {
+    font-weight: 400;
+    margin-left: 15px;
+    margin-right: 15px;;
+    text-decoration: none;
+    color: #2d2d2d;
+    line-height: 65px;
+}
+
+.logo {
+    float: left;
+    width: 20%;
+    padding-left: 30px;
+    }
+
+.logo img {
+    width: 100%;
+    max-width: 190px;
+}
+
+.column-2 a {
+        padding: 6px 45px 5px 45px;
+        border-radius: 90px;
+        border: 1px solid black;
+        text-decoration: none;
+        color: #2d2d2d;
+        font-size: 12px;
+        line-height: 20px;
+        display: inline-block;
+        margin-top: 20px;
+        margin-left:10px;
+        float: left;
+        line-height: 35px;
+    }
+
+.column {
+    float: left;
+    width: 33.33%;
+    margin-top: 20px;
+  }
+
+.column-2 {
+    float: left;
+    width: 50%;
+  }
+
+  /* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.column img {
+    width: 60%;
+    padding-top: 0px;
+  }
+
+.column-2 img {
+    width: 60%;
+    border-radius: 300px;
+  }
+
+  .esperienza {
+    margin-top: 30px;
+  }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+    background: black;
+    color: white;
+    margin-top: 45px;
+  }
+  
+  /* Style navigation menu links */
+  .topnav a {
+    color:white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    margin-left: 20px;
+    line-height: 25px;
+    text-align: left;
+  }
+
+  /* Style navigation menu links */
+  .topnav a:hover {
+    color:black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    margin-left: 20px;
+    line-height: 25px;
+    text-align: left;
+  }
+  
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    display: block;
+    position: fixed;
+    right: 0;
+    top: 18px;
+    color:#858585;
+    font-size: 20px;
+  }
+
+  
+  .footer-distributed {
+    background-color: black;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: normal 16px sans-serif;
+    padding: 45px 50px;
+  }
+  
+  .footer-distributed .footer-left p {
+    color: #8f9296;
+    font-size: 14px;
+    margin: 0;
+  }
+  /* Footer links */
+  
+  .footer-distributed p.footer-links {
+    font-size: 18px;
+    color: #ffffff;
+    margin: 0 0 10px;
+    padding: 0;
+    transition: ease .25s;
+  }
+  
+  .footer-distributed p.footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+    transition: ease .25s;
+    color: white;
+  }
+  
+  .footer-distributed .footer-links a:before {
+    content: "·";
+    font-size: 20px;
+    left: 0;
+    color: #fff;
+    display: inline-block;
+    padding-right: 5px;
+  }
+  
+  .footer-distributed .footer-links .link-1:before {
+    content: none;
+  }
+  
+  .footer-distributed .footer-right {
+    float: right;
+    margin-top: 6px;
+    max-width: 180px;
+  }
+  
+  .footer-distributed .footer-right a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-left: 3px;
+    transition:all .25s;
+  }
+
+  .column-2 img {
+    animation: rotation 26s cubic-bezier(0, 0.19, 1, 1);
+    mix-blend-mode: multiply;
+  }
+  
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+  
+  .footer-distributed .footer-right a:hover{transform:scale(1.1); -webkit-transform:scale(1.1);}
+  
+  .footer-distributed p.footer-links a:hover{text-decoration:underline;}
+  
+  /* Menu starts here */
+
+  /*
+ CSS for the main interaction
+*/
+.tabset > input[type="radio"] {
+  position: relative;
+  left: -200vw;
+}
+
+.tabset .tab-panel {
+  display: none;
+}
+
+.tabset > input:first-child:checked ~ .tab-panels > .tab-panel:first-child,
+.tabset > input:nth-child(3):checked ~ .tab-panels > .tab-panel:nth-child(2),
+.tabset > input:nth-child(5):checked ~ .tab-panels > .tab-panel:nth-child(3),
+.tabset > input:nth-child(7):checked ~ .tab-panels > .tab-panel:nth-child(4),
+.tabset > input:nth-child(9):checked ~ .tab-panels > .tab-panel:nth-child(5),
+.tabset > input:nth-child(11):checked ~ .tab-panels > .tab-panel:nth-child(6) {
+  display: block;
+}
+
+/*
+ Styling
+*/
+
+.tabset > label {
+  position: relative;
+  display: inline-block;
+  padding: 15px 15px 25px;
+  border: 1px solid transparent;
+  border-bottom: 0;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.tabset > label::after {
+  content: "";
+  position: absolute;
+  left: 15px;
+  bottom: 10px;
+  width: 22px;
+  height: 4px;
+  background: #8d8d8d;
+}
+
+.tabset > input:checked + label {
+  border-color: #ccc;
+  border-bottom: 1px solid #fff;
+  margin-bottom: -1px;
+}
+
+.tab-panel {
+  padding: 30px 0;
+  border-top: 1px solid #ccc;
+}
+.tabset {
+  max-width: auto;
+}
+  /* Menu finish here /*
+
+  /* Media Queries */
+  
+  @media (max-width: 600px) {
+    .footer-distributed .footer-left, .footer-distributed .footer-right {
+      text-align: center;
+    }
+    .footer-distributed .footer-right {
+      float: none;
+      margin: 0 auto 20px;
+    }
+    .footer-distributed .footer-left p.footer-links {
+      line-height: 1.8;
+    }
+  }
+
+@media only screen and (max-width:678px) {
+    nav {
+        display: none; 
+    }
+    .logo {
+    width: 90%;
+    text-align: left;
+    }
+
+    h1 {
+        font-size: 46px;
+        line-height: 55px;
+    }
+    .slide .testo {
+        padding-top: 130px;}
+
+    .contact {
+        width: 80%;
+    }
+
+   
+    .column-2 {
+        width: 100%;
+      }
+}
+
+@media only screen and (min-width:678px) {
+    .topnav {
+        display: none; 
+    }
+    a.icon  {
+        position: fixed;
+    }
+}
