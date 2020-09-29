@@ -53,41 +53,58 @@ table {
 
 
 h1 {
-    font-size: 35px;
+    font-size: 48px;
     font-weight: 400;
     text-align: left;
     padding:10px;
     padding-top: 30px;
-    line-height: 42px;
+    line-height: 52px;
+    letter-spacing: -2px;
 }
 
 .column-2 p {
   text-align: left;
   padding:10px;
-  line-height: 30px;
+  line-height: 26px;
 }
 
 h2 {
-    font-size: 32px;
+    font-size: 30px;
     line-height: 38px;
     font-weight: 400;
     margin-bottom: 20px;
+    letter-spacing: -2px;
+}
+
+h3, h4, h5, h6 {
+  font-size: 18px;
+  line-height: 38px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  letter-spacing: -1px;
+  text-decoration: none;
+}
+
+h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover{
+  color: #bb7d7d;
 }
 
 p {
-    line-height: 27px;
+    line-height: 26px;
+    font-size: 15px;
 }
 
+
 .bg_dark {
-    background-color :#E0DBD5;
-    padding-left: 80px;
-    padding-right: 80px;
-    padding-top: 70px;
-    padding-bottom: 80px;;
+  background-color : #e9decceb;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-top: 70px;
+  padding-bottom: 80px;;
 }
 
 .bg_beige {
-    background-color: #f2f0ec; 
+  background-color: #ffdead4f;
 }
 
 .pt-50 {
@@ -108,12 +125,21 @@ p {
 
 .fa {
     padding-right:7px;
+    font-size: 20px;
 }
 
+hr {
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
 /* Header */
 
 header {
-    background-color:transparent;
+    background: linear-gradient(180deg, rgba(18, 18, 18, 0.5) 0%, rgba(0,212,255,0) 100%);
+    mix-blend-mode: hard-light;
     height: 62px;
     text-align: right;
     padding: 11px 0;
@@ -123,6 +149,10 @@ header {
     width: 100%;
 }
 
+i.fa.fa-bars {
+  font-size: 29px;
+}
+ 
 nav {
     text-align: right;
     padding-right: 100px;
@@ -140,21 +170,23 @@ nav a {
 .logo {
     float: left;
     width: 20%;
-    padding-left: 30px;
+    padding-left: 10px;
     }
 
 .logo img {
     width: 100%;
-    max-width: 190px;
+    max-width: 180px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
 }
 
 .column-2 a {
-        padding: 6px 45px 5px 45px;
-        border-radius: 90px;
-        border: 1px solid black;
-        text-decoration: none;
-        color: #2d2d2d;
-        font-size: 12px;
+        text-decoration: underline;
+        color:#bb7d7d;
+        font-size: 18px;
         line-height: 20px;
         display: inline-block;
         margin-top: 20px;
@@ -165,8 +197,9 @@ nav a {
 
 .column {
     float: left;
-    width: 33.33%;
+    width: 25%;
     margin-top: 20px;
+    text-align: center;
   }
 
 .column-2 {
@@ -179,22 +212,35 @@ nav a {
     content: "";
     display: table;
     clear: both;
+    margin-bottom: 50px;
   }
 
-.column img {
-    width: 60%;
-    padding-top: 0px;
-  }
 
 .column-2 img {
     width: 60%;
     border-radius: 300px;
+    margin-top: -10px;
   }
 
   .esperienza {
-    margin-top: 30px;
+    margin-top: 100px;
   }
-  
+
+  .skills {
+    margin-top: 100px;
+  }
+  .skills p {
+    margin-bottom: 40px;
+  }
+
+  .about {
+    margin-top: 40px;
+  }
+
+  .about p {
+    margin-bottom: 40px;
+  }
+
   /* Hide the links inside the navigation menu (except for logo/home) */
   .topnav #myLinks {
     display: none;
@@ -237,6 +283,57 @@ nav a {
     font-size: 20px;
   }
 
+  .column-2 img {
+    animation: rotation 26s cubic-bezier(0, 0.19, 1, 1);
+    mix-blend-mode: multiply;
+  }
+  
+  
+  .esperienza li {
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  .esperienza p {
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.portfolio {
+  float: left;
+  width: 48%;
+  padding:15px;
+  padding-left: 0;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.portfolio img{
+  width: 90%;
+  height: 60%;
+}
+
+.portfolio img:hover{
+  color: ;
+}
+
+/* Clear floats after image containers */
+.portfolio-row::after {
+  content: "";
+  clear: both;
+  display: table;
+  margin-top: 40px;
+} 
+
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
   
   .footer-distributed {
     background-color: black;
@@ -303,20 +400,6 @@ nav a {
     transition:all .25s;
   }
 
-  .column-2 img {
-    animation: rotation 26s cubic-bezier(0, 0.19, 1, 1);
-    mix-blend-mode: multiply;
-  }
-  
-  @keyframes rotation {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(359deg);
-    }
-  }
-  
   .footer-distributed .footer-right a:hover{transform:scale(1.1); -webkit-transform:scale(1.1);}
   
   .footer-distributed p.footer-links a:hover{text-decoration:underline;}
@@ -326,6 +409,7 @@ nav a {
   /*
  CSS for the main interaction
 */
+
 .tabset > input[type="radio"] {
   position: relative;
   left: -200vw;
@@ -398,6 +482,20 @@ nav a {
     }
   }
 
+  .wpcc-color-custom-447278441.wpcc-container {
+    border:none;
+    font-size: 12px;
+    font-weight: 300;
+  }
+
+  .wpcc-color-custom-447278441 .wpcc-btn {
+    color: rgb(0, 0, 0);
+    background-color: rgb(249, 249, 249);
+    font-family: inherit;
+    font-weight: 600;
+    border-radius: 3px;
+}
+
 @media only screen and (max-width:678px) {
     nav {
         display: none; 
@@ -408,20 +506,42 @@ nav a {
     }
 
     h1 {
-        font-size: 46px;
-        line-height: 55px;
-    }
-    .slide .testo {
-        padding-top: 130px;}
-
-    .contact {
-        width: 80%;
+        font-size: 42px;
+        line-height: 50px;
     }
 
+    .pt-50 {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
    
     .column-2 {
         width: 100%;
       }
+
+      .bg_dark {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+    .column-2 img {
+        width: 70%;
+        text-align: center;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-bottom: -10px;
+      }
+      
+      /* Three image containers (use 25% for four, and 50% for two, etc) */
+      .portfolio {
+        float: none;
+        text-align: center;
+        margin: auto;
+        width: 99%;
+        padding:10px;
+        margin-top: 30px;
+        }
+
 }
 
 @media only screen and (min-width:678px) {
